@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ChoresViewController.swift
 //  Chorus
 //
 //  Created by Hao Guan on 8/19/18.
@@ -8,8 +8,8 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ChoresViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
