@@ -23,7 +23,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="teb-UH-dDI" customClass="ChoresStatus" customModule="Chorus" customModuleProvider="target">
                                         <rect key="frame" x="125" y="21" width="125" height="125"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="OHS-9j-sVF">
+                                            <stackView alpha="0.0" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="OHS-9j-sVF">
                                                 <rect key="frame" x="37.5" y="34.5" width="50.5" height="55.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J5j-Xn-NdG">
@@ -46,6 +46,9 @@
                                             <constraint firstAttribute="width" secondItem="teb-UH-dDI" secondAttribute="height" multiplier="1:1" id="ipp-nU-EP5"/>
                                             <constraint firstItem="OHS-9j-sVF" firstAttribute="centerX" secondItem="teb-UH-dDI" secondAttribute="centerX" id="jv3-oP-nJR"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="statusStackView" destination="OHS-9j-sVF" id="OuE-Go-yyE"/>
+                                        </connections>
                                     </view>
                                 </subviews>
                                 <constraints>

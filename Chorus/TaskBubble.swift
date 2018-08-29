@@ -38,10 +38,10 @@ class TaskBubble: UIView {
         }
     }
     
-    init(frame: CGRect, style: Style) {
-        super.init(frame: frame)
+    init(width: CGFloat, style: Style) {
+        super.init(frame: .zero)
         translatesAutoresizingMaskIntoConstraints = false
-        layer.cornerRadius = frame.width / 2
+        layer.cornerRadius = width / 2
         
         guard let gradient = layer as? CAGradientLayer else { return }
         gradient.colors = [style.fromColor, style.toColor]
