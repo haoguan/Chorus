@@ -13,12 +13,6 @@ class ChoresStatus: UIView {
     var bubbles: [UIView] = []
     let taskBubbleCount = 10
     
-    @IBOutlet weak var taskBubble: UIView! {
-        didSet {
-            taskBubble.layer.cornerRadius = taskBubble.frame.width / 2
-        }
-    }
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         
