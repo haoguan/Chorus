@@ -12,7 +12,7 @@
         <!--My Chores-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ChoresViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ChoresViewController" customModule="Chorus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iVd-Xw-t6H">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -23,7 +23,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="teb-UH-dDI" customClass="ChoresStatus" customModule="Chorus" customModuleProvider="target">
                                         <rect key="frame" x="125" y="21" width="125" height="125"/>
                                         <subviews>
-                                            <stackView alpha="0.0" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="OHS-9j-sVF">
+                                            <stackView contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="OHS-9j-sVF">
                                                 <rect key="frame" x="37.5" y="34.5" width="50.5" height="55.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J5j-Xn-NdG">
@@ -59,25 +59,32 @@
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9ZA-nZ-VQY">
                                 <rect key="frame" x="0.0" y="187" width="375" height="480"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="sectionIndexBackgroundColor" red="0.16862745100000001" green="0.1764705882" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.16862745100000001" green="0.1764705882" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Pvj-Kc-bhB">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ChoresCell" id="Pvj-Kc-bhB" customClass="ChoresCell" customModule="Chorus" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Pvj-Kc-bhB" id="EBt-BV-dbL">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8R-Q4-mni">
-                                                    <rect key="frame" x="36" y="12" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8R-Q4-mni">
+                                                    <rect key="frame" x="12" y="8" width="44" height="28"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.16862745100000001" green="0.1764705882" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="b8R-Q4-mni" secondAttribute="bottom" constant="8" id="2bE-BK-OQe"/>
+                                            <constraint firstItem="b8R-Q4-mni" firstAttribute="leading" secondItem="Pvj-Kc-bhB" secondAttribute="leading" constant="12" id="NAu-5j-c2T"/>
+                                            <constraint firstItem="b8R-Q4-mni" firstAttribute="top" secondItem="Pvj-Kc-bhB" secondAttribute="top" constant="8" id="i9n-H2-QxK"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="label" destination="b8R-Q4-mni" id="q20-0S-hzj"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -96,6 +103,9 @@
                         <viewLayoutGuide key="safeArea" id="HTs-O1-tLt"/>
                     </view>
                     <navigationItem key="navigationItem" title="My Chores" id="2b4-zN-rDT"/>
+                    <connections>
+                        <outlet property="choresTableView" destination="9ZA-nZ-VQY" id="0sA-nk-czB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

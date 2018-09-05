@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E73135E2137CA2500CEA735 /* ChoresCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E73135D2137CA2500CEA735 /* ChoresCell.swift */; };
 		3E782DBB212A9A9F00E11CD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E782DBA212A9A9F00E11CD3 /* AppDelegate.swift */; };
 		3E782DBD212A9A9F00E11CD3 /* ChoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E782DBC212A9A9F00E11CD3 /* ChoresViewController.swift */; };
 		3E782DC0212A9A9F00E11CD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E782DBE212A9A9F00E11CD3 /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E73135D2137CA2500CEA735 /* ChoresCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoresCell.swift; sourceTree = "<group>"; };
 		3E782DB7212A9A9F00E11CD3 /* Chorus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chorus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E782DBA212A9A9F00E11CD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E782DBC212A9A9F00E11CD3 /* ChoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoresViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				3E782DBC212A9A9F00E11CD3 /* ChoresViewController.swift */,
 				3E98986F2135D186004EA708 /* ChoresHeader.swift */,
 				3EDE01A12135DDB700B6021E /* ChoresStatus.swift */,
+				3E73135D2137CA2500CEA735 /* ChoresCell.swift */,
 				3E782DBE212A9A9F00E11CD3 /* Main.storyboard */,
 				3E782DC1212A9A9F00E11CD3 /* Assets.xcassets */,
 				3E782DC3212A9A9F00E11CD3 /* LaunchScreen.storyboard */,
@@ -210,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E9898702135D186004EA708 /* ChoresHeader.swift in Sources */,
+				3E73135E2137CA2500CEA735 /* ChoresCell.swift in Sources */,
 				3EDE01A22135DDB700B6021E /* ChoresStatus.swift in Sources */,
 				3E782DBD212A9A9F00E11CD3 /* ChoresViewController.swift in Sources */,
 				3EDE01A42137320700B6021E /* TaskBubble.swift in Sources */,

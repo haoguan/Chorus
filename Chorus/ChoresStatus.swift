@@ -10,7 +10,11 @@ import UIKit
 
 class ChoresStatus: UIView {
     
-    @IBOutlet weak var statusStackView: UIStackView!
+    @IBOutlet weak var statusStackView: UIStackView! {
+        didSet {
+            statusStackView.alpha = 0
+        }
+    }
     
     var bubbles: [UIView] = []
     let taskBubbleCount = 10
